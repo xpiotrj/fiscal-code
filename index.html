@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="fiscalcode.js"></script>
+</head>
+<body>
+    <div id="main">
+        <span>Fiscal code generator</span>
+        <div class="name-surname">
+            <span class="over-input">Name</span><span class="over-input">Surname</span>
+            <input type="text" name="" id="name">     
+            <input type="text" name="" id="surname">
+        </div>
+        
+        <span>Gender</span>
+        <div>
+            Female<input type="radio" value="F" checked="checked" name="gender" id="gender">
+            Male<input type="radio" value="M" name="gender" id="gender">
+        </div>
+        <span>Date of birth</span>
+        <input type="date" name="" id="dateofbirth">
+
+
+        <input type="button" value="Generate Fiscal Code" onclick="generateFiscal()">
+
+        <div id="result"></div>
+    </div>
+</body>
+</html>
